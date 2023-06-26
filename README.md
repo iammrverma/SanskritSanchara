@@ -14,17 +14,9 @@ Welcome to SanskritSanchara, a comprehensive language-learning platform dedicate
 
 - **Mobile-Friendly**: Access SanskritSanchara anytime, anywhere. Our website is optimized for mobile devices, ensuring that you can continue your language-learning journey on the go.
 
-## Getting Started
-
-To get started with SanskritSanchara, simply visit our website at [www.sanskritsanchara.com](https://www.sanskritsanchara.com). Create an account to access the full range of features and start your Sanskrit learning adventure.
-
 ## Contributing
 
 We welcome contributions to SanskritSanchara from the community. If you have ideas for new features, improvements to existing content, or would like to report any issues or bugs, please submit them to our [GitHub repository](https://github.com/sanskritsanchara).
-
-## Feedback and Support
-
-We value your feedback and strive to provide the best learning experience possible. If you have any questions, suggestions, or need support, please contact our team at [support@sanskritsanchara.com](mailto:support@sanskritsanchara.com).
 
 ## License
 
