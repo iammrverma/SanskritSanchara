@@ -1,0 +1,118 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300 display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.mynavbar{
+    border: 1px solid brown;
+    display: flex;
+    background: url(../Asset/bg.jpg);
+    align-items: center;
+    background-size: 100%;
+    background-clip: border-box;
+    background-position: center;
+    padding-top: 2rem;
+    justify-content: space-around;
+}
+.brand{
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem 1rem 0 0;
+    padding: 0.45rem;
+    color: black;
+}
+.navigation{
+    position: relative;
+    width: 400px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 1rem 1rem 0 0 ;
+    
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+}
+
+.navigation ul{
+    display: flex;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    z-index: 1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+
+}
+
+.navigation ul li.active a .icon{
+    transform: translateY(-35px);
+}
+.navigation ul li a .text{
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navigation ul li.active a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.indicator{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0.3rem solid hsl(0 0% 50% / 0.5);
+    transition: 0.5s;
+    background: hsl(0 0% 100% / 0.5);
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px * 3));
+}
+@media (max-width: 700px) {
+    .navigation{
+        position: fixed;
+        bottom: 0px;
+        width: 100vw;
+    }
+  }
+  
