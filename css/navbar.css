@@ -6,7 +6,9 @@
     font-family: 'Poppins', sans-serif;
 }
 .mynavbar{
-    border: 1px solid brown;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     background: url(../Asset/bg.jpg);
     align-items: center;
@@ -113,6 +115,7 @@
         position: fixed;
         bottom: 0px;
         width: 100vw;
+        z-index: 100;
     }
   }
   

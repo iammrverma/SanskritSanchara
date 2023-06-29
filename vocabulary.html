@@ -4,32 +4,61 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sanskrit Sanchara</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
   </head>
   <body>
-    <div id="navigationContainer"></div>
+    <header class="mynavbar">
+      <div class="brand">
+        <h1>Sanskrit Sanchara</h1>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li class="list">
+            <a href="lessans.html" class="navlink">
+              <span class="icon">
+                <ion-icon name="book-outline"></ion-icon>
+              </span>
+              <span class="text">Lessons</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="vocabulary.html" class="navlink">
+              <span class="icon">
+                <ion-icon name="mic-outline"></ion-icon>
+              </span>
+              <span class="text">Vocabulary</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="practice.html" class="navlink">
+              <span class="icon">
+                <ion-icon name="help-outline"></ion-icon>
+              </span>
+              <span class="text">Practice</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="me.html" class="navlink">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="text">Me</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </nav>
+    </header>
 
     <!-- Your code in between -->
     Vocabulary
     <!-- Your code in between -->
 
-    <script>
-      // Load and insert the navigation menu into the navigationContainer element
-      fetch("navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navigationContainer").innerHTML = data;
-        });
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Scripts here -->
+    <script src="js/navbar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
