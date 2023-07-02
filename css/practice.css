@@ -1,0 +1,125 @@
+body {
+  overflow-x: hidden;
+}
+.match-words-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  scroll-snap-type: x mandatory;
+  margin: 1rem 0.5rem;
+}
+
+.match-word-box {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  width: 95vw;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 1rem 0 0;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.match-word-box p {
+  font-size: 1.5rem;
+}
+
+.radiobtns {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+.radio-btn {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radio-btn > ion-icon {
+  color: #ffffff;
+  background-color: #8373e6;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(4);
+  border-radius: 50px;
+  padding: 3px;
+  transition: 0.2s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.radio-btn .option {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-btn .option img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.custom-radio input:checked + .radio-btn {
+  border: 3px solid #8373e6;
+}
+
+.custom-radio input:checked + .radio-btn > ion-icon {
+  opacity: 1;
+  top: 0;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.match-word-box button {
+  width: max(300px, 80vw);
+  color: #ffffff;
+  background-color: #8373e6;
+  padding: 0.5rem;
+  box-shadow: inset 0px -10px 0px 0px #695bc0;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  border-radius: 20px;
+
+}
+
+.match-word-box button:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@media (max-width:400px) {
+   .radiobtns{
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+   }
+   .radio-btn{
+      width: 100px;
+      height: 100px;
+   }
+   .match-word-box {
+      text-align: center
+   }
+}
+
