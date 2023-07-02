@@ -1,6 +1,12 @@
 body {
   overflow-x: hidden;
 }
+.practice-vocab{
+  padding-top: 1rem;
+}
+.practice-vocab span{
+  padding: 0 1rem;
+}
 .match-words-container {
   overflow: hidden;
   display: flex;
