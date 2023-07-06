@@ -6,7 +6,7 @@
 
 .me{
     max-width: 95vw;
-    border: 1px solid var(--border-color, steelblue);
+    border: 3px solid #8373e6;
     border-radius: 24px;
     padding: 1rem 0;
     margin: 1rem auto;
@@ -25,8 +25,23 @@
 }
 
 input, label, select{
-    padding: 0.5rem 0;
+    padding: 0.5rem;
     font-size: 1rem;
+}
+
+input, select{
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input{
+    box-shadow:none;
+    border-radius: 0px;
+}
+
+input:focus{
+    box-shadow: 0px 0px 6px 3px #8373e6, 0px 1px 6px 3px #8373e6;
+    border-radius: 12px;
 }
 
 select{
@@ -69,9 +84,5 @@ select{
         width: 100%;
         text-align: left;
         gap :0;
-    }
-
-    input{
-        padding: 0.5rem 1rem;
     }
  }
