@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sanskrit Sanchara</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/editme.css" />
+  </head>
+  <body>
+    <section class="me">
+      <div class="form">
+        <label for="name">Enter your name</label>
+        <input type="text" name="name" placeholder="Mohan Murlidhar" id="name"/>
+
+        <label for="age">Enter your age</label>
+        <input type="number" placeholder="19" id="age"/>
+
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+          <option value="Select Gender">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <button onclick="handleSaveInfo()">Save Info</button>
+    </section>
+
+    <!-- Scripts here -->
+    <script src="js/editme.js"></script>
+    <script src="js/navbar.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

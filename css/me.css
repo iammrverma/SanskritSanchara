@@ -1,88 +1,103 @@
-*{
-    margin: 0;
+.profile {
+  width: 80vw;
+  margin: 1rem auto;
+  border: 3px solid grey;
+  border-radius: 25px;
+}
+
+.profile .bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.profile .bio .profilepicture,
+.profile .bio .personaldetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.profile .bio .profilepicture img {
+  width: min(350px, 100%);
+  object-fit: contain;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.profile .bio .profilepicture label {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.profile .bio .personaldetail .namecontainer,
+.profile .bio .personaldetail .gendercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile .bio .personaldetail .namecontainer label,
+.profile .bio .personaldetail .gendercontainer label {
+  font-size: 1rem;
+  color: grey;
+}
+
+.profile .bio .personaldetail .namecontainer div,
+.profile .bio .personaldetail .gendercontainer div {
+  font-size: 2.5rem;
+  padding: 0 1rem;
+}
+
+.profile .bio .personaldetail .namecontainer span,
+.profile .bio .personaldetail .gendercontainer span {
+}
+
+@media (max-width: 1000px) {
+  .profile {
+    width: 90vw;
+  }
+  .profile .bio .personaldetail .namecontainer div,
+  .profile .bio .personaldetail .gendercontainer div {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile {
+    width: 100vw;
+    border: none;
     padding: 0;
-    box-sizing: border-box;
-}
-
-.me{
-    max-width: 95vw;
-    border: 3px solid #8373e6;
-    border-radius: 24px;
-    padding: 1rem 0;
-    margin: 1rem auto;
-    display: grid;
-    justify-content: center;
-    row-gap: 1rem;
-}
-
-.form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  }
+  .profile .bio {
+    grid-template-columns: 1fr;
+  }
+  .profile .bio .profilepicture img {
     width: 100%;
-    height: 100%;
-    text-align: right;
-    gap: 2rem 1rem;
-}
-
-input, label, select{
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-
-input, select{
-    border: none;
-    outline: none;
-    transition: all 0.3s ease;
-}
-input{
-    box-shadow:none;
-    border-radius: 0px;
-}
-
-input:focus{
-    box-shadow: 0px 0px 6px 3px #8373e6, 0px 1px 6px 3px #8373e6;
-    border-radius: 12px;
-}
-
-select{
-    width: fit-content;
-}
-
-.me button {
-    width: max(300px, 80vw);
-    color: #ffffff;
-    background-color: #8373e6;
-    padding: 0.5rem 0;
-    margin: auto;
-    box-shadow: 0px 5px 0px 0px #695bc0;
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-    border-radius: 12px;
-    outline: none;
-    border: none;
-  
-  }
-  
-  .me button:hover {
-    box-shadow: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
+    height: 200px;
+    object-fit: contain;
   }
 
-  @media (max-width:400px) {
-    *{
-        margin: 0;padding: 0;
-    }
-    .me{
-        max-width:  100vw;
-        margin: 0;
-        border: none;
-    }
-    .form{
-        grid-template-columns: 1fr;
-        width: 100%;
-        text-align: left;
-        gap :0;
-    }
- }
+  .profile .bio .personaldetail .namecontainer div,
+  .profile .bio .personaldetail .gendercontainer div {
+    font-size: 1.7rem;
+    padding: 0;
+  }
+
+  .profile .bio .personaldetail .namecontainer,
+  .profile .bio .personaldetail .gendercontainer {
+    display: grid;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .profile .bio .profilepicture,
+  .profile .bio .personaldetail {
+    display: grid;
+    gap: 1rem;
+  }
+}
