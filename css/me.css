@@ -1,0 +1,103 @@
+.profile {
+  width: 80vw;
+  margin: 1rem auto;
+  border: 3px solid grey;
+  border-radius: 25px;
+}
+
+.profile .bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.profile .bio .profilepicture,
+.profile .bio .personaldetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.profile .bio .profilepicture img {
+  width: min(350px, 100%);
+  object-fit: contain;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.profile .bio .profilepicture label {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.profile .bio .personaldetail .namecontainer,
+.profile .bio .personaldetail .gendercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile .bio .personaldetail .namecontainer label,
+.profile .bio .personaldetail .gendercontainer label {
+  font-size: 1rem;
+  color: grey;
+}
+
+.profile .bio .personaldetail .namecontainer div,
+.profile .bio .personaldetail .gendercontainer div {
+  font-size: 2.5rem;
+  padding: 0 1rem;
+}
+
+.profile .bio .personaldetail .namecontainer span,
+.profile .bio .personaldetail .gendercontainer span {
+}
+
+@media (max-width: 1000px) {
+  .profile {
+    width: 90vw;
+  }
+  .profile .bio .personaldetail .namecontainer div,
+  .profile .bio .personaldetail .gendercontainer div {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile {
+    width: 100vw;
+    border: none;
+    padding: 0;
+  }
+  .profile .bio {
+    grid-template-columns: 1fr;
+  }
+  .profile .bio .profilepicture img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .profile .bio .personaldetail .namecontainer div,
+  .profile .bio .personaldetail .gendercontainer div {
+    font-size: 1.7rem;
+    padding: 0;
+  }
+
+  .profile .bio .personaldetail .namecontainer,
+  .profile .bio .personaldetail .gendercontainer {
+    display: grid;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .profile .bio .profilepicture,
+  .profile .bio .personaldetail {
+    display: grid;
+    gap: 1rem;
+  }
+}

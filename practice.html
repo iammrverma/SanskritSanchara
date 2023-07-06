@@ -4,32 +4,203 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sanskrit Sanchara</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/practice.css" />
   </head>
   <body>
-    <div id="navigationContainer"></div>
-
-    <!-- Your code in between -->
-    practice
-    <!-- Your code in between -->
-
-    <script>
-      // Load and insert the navigation menu into the navigationContainer element
-      fetch("navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navigationContainer").innerHTML = data;
-        });
-    </script>
+    <header class="mynavbar">
+      <div class="brand">
+        <h1>Sanskrit Sanchara</h1>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li class="list">
+            <a href="lessans.html" class="navlink">
+              <span class="icon">
+                <ion-icon name="book-outline"></ion-icon>
+              </span>
+              <span class="text">Lessons</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="vocabulary.html" class="navlink">
+              <span class="icon">
+                <ion-icon name="mic-outline"></ion-icon>
+              </span>
+              <span class="text">Vocabulary</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="practice.html" class="navlink">
+              <span class="icon">
+                <ion-icon name="help-outline"></ion-icon>
+              </span>
+              <span class="text">Practice</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="me.html" class="navlink">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="text">Me</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="practice-vocab">
+        <span><strong>शब्दशास्त्र</strong>/vocabulary</span>
+        <div class="match-words-container">
+          <div class="match-word-box">
+            <p>Which image resembles <strong>हस्त</strong></p>
+            <div class="radiobtns">
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/hand.jpg" alt="" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/legs.jpg" alt="legs" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/hair.jpg" alt="hair" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/eyes.jpg" alt="eyes" />
+                  </div>
+                </span>
+              </label>
+            </div>
+            <div class="button">
+              <button>SUBMIT</button>
+            </div>
+          </div>
+          <div class="match-word-box">
+            <p>Which image resembles <strong>पुरुष</strong></p>
+            <div class="radiobtns">
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/female.jpg" alt="female" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/male.jpg" alt="male" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/boy.jpg" alt="boy" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/girl.jpg" alt="girl" />
+                  </div>
+                </span>
+              </label>
+            </div>
+            <div class="button">
+              <button>SUBMIT</button>
+            </div>
+          </div>
+          <div class="match-word-box">
+            <p>Which image resembles <strong>व्याघ्र</strong></p>
+            <div class="radiobtns">
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/dog.jpg" alt="dog" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/cat.jpg" alt="cat" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/bird.jpg" alt="bird" />
+                  </div>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <div class="option">
+                    <img src="Asset/tiger.jpg" alt="tiger" />
+                  </div>
+                </span>
+              </label>
+            </div>
+            <div class="button">
+              <button>SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Sripts here -->
+    <script src="js/practice.js"></script>
+    <script src="js/navbar.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>
