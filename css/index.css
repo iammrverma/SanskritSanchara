@@ -1,4 +1,32 @@
-:root{
-    --navabar-color:#fff;
-    /* --<variable name>: <value>; */
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: #b6b6b6;
+  --text-secondary: #ffffff;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --primary: #ff86d0;
+  --secondary: #df49a6;
+  --green: #58cc02;
+  --transition-speed: 600ms;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
 }
