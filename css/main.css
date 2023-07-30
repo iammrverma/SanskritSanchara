@@ -67,7 +67,6 @@
   position: sticky;
   top: 0;
   left: 0;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,9 +155,6 @@
 @media only screen and (min-width: 701px) {
   .learn {
     width: 55%;
-  }
-  .quests .head{
-    /* font-size: 1rem; */
   }
   .left-layout {
     width: 40%;
