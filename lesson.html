@@ -10,9 +10,15 @@
   <body>
     <div class="lessonContainer">
       <div class="progressContainer">
-        <div class="close">
-          <hr />
-          <hr />
+        <div class="close" href="index.html">
+          <a
+            class="link"
+            href="index.html"
+            style="background-color: aliceblue; color: white"
+          >
+            <hr />
+            <hr />
+          </a>
         </div>
         <div class="progressBar">
           <div class="progress"></div>
@@ -20,8 +26,10 @@
         <div class="remaining">10</div>
       </div>
       <div class="main">
-        <div class="question"><div class="qstr">hello</div></div>
-        <div class="image"><img src="./Asset/bird.jpg" alt="" /></div>
+        <div class="question">
+          <div class="qstr">Translate to sanskrit: <span></span></div>
+        </div>
+        <div class="image"><img src="" id="img" alt="" /></div>
         <div class="options">
           <button class="option">hello</button>
           <button class="option">hello</button>
@@ -29,7 +37,7 @@
           <button class="option">hello</button>
         </div>
       </div>
-      <button class="continue">continue</button>
+      <button class="continue disabled">continue</button>
     </div>
   </body>
   <script src="js/lesson.js"></script>
