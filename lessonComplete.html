@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Congratulations !!!</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+    .container {
+      margin: auto;
+      width: min(100vw, 800px);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .clap {
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .clap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .continue {
+      height: 10%;
+      width: 100%;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: var(--secondary);
+      border-radius: 24px;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .none {
+      display: none;
+    }
+    .stat {
+      width: 50%;
+      background: transparent;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Congratulations</h1>
+      <div class="clap"><img src="./Asset/nexttime.gif" alt="" /></div>
+      <h1><span class="correct"></span> / <span class="total"></span></h1>
+      <div class="stat">
+        <div class="streak">
+          <img src="./Asset/streak.svg" alt="" />&nbsp;
+          <span>13</span>
+        </div>
+        <div class="gems">
+          <img src="./Asset/gem.svg" alt="" />&nbsp; <span>500</span>
+        </div>
+        <div class="xp">
+          <img src="./Asset/xp.svg" alt="" />&nbsp;
+          <span>10</span>
+        </div>
+      </div>
+      <div class="continue">Home</div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+  <script>
+    const correctQuestions = JSON.parse(
+      localStorage.getItem("correctQuestions")
+    );
+    const totalQuestions = JSON.parse(
+      localStorage.getItem("sancharalesson")
+    ).totalQuestion;
+    const sancharaUser = JSON.parse(localStorage.getItem("sancharaUser"));
+    const score = (correctQuestions / totalQuestions) * 100 ;
+
+    document.querySelector(".total").innerHTML = totalQuestions;
+    document.querySelector(".correct").innerHTML = correctQuestions;
+    
+    if (score >= 80) {
+      sancharaUser.xp += 20;
+      sancharaUser.gems += 10;
+      sancharaUser.streak += 1;
+      document
+        .querySelector(".clap")
+        .querySelector("img")
+        .setAttribute("src", "././Asset/clap.gif");
+    }
+
+    document.querySelector(".continue").addEventListener("click", () => {
+      localStorage.setItem("sancharaUser", JSON.stringify(sancharaUser));
+      window.location = "./index.html";
+    });
+
+    document.querySelector(".streak").querySelector("span").innerHTML =
+      sancharaUser.streak;
+    document.querySelector(".gems").querySelector("span").innerHTML =
+      sancharaUser.gems;
+    document.querySelector(".xp").querySelector("span").innerHTML =
+      sancharaUser.xp;
+  </script>
+</html>

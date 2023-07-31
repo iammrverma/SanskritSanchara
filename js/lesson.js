@@ -11,6 +11,7 @@ let questionCompleted = 0;
 let width = 0;
 let currQues = lesson.questions[0];
 let optionClicked = false;
+let correctQuestions = 0;
 
 const renderQuesDetails = () => {
   remaining.innerHTML = totalQuestion - questionCompleted;
@@ -31,6 +32,7 @@ const handleOptionClick = (index) => {
     if (optionIndex === index) {
       if (currQues.options[index] === currQues.sanskritWord) {
         option.classList.add("correct");
+        correctQuestions++;
       } else {
         option.classList.add("incorrect");
       }
@@ -46,7 +48,6 @@ const handleOptionClick = (index) => {
 };
 
 const handleContinueClick = () => {
-
   // Move to the next question
   if (questionCompleted < totalQuestion) {
     optionClicked = false;
@@ -67,8 +68,8 @@ const handleContinueClick = () => {
     continuebtn.removeEventListener("click", handleContinueClick);
     continuebtn.classList.add('disabled')
   } else {
-    // Handle completion of all questions
-    console.log("All questions completed!");
+    localStorage.setItem("correctQuestions", JSON.stringify(correctQuestions))
+    window.location="./lessonComplete.html"
   }
 };
 

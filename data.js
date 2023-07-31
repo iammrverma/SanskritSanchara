@@ -25,10 +25,10 @@ export const units = [
             options: ["अश्वः", "पलङ्कः", "गजः", "वनम्"],
           },
           {
-            englishWord: "bell",
-            sanskritWord: "घण्टा",
-            path: "./Asset/bell.jpg",
-            options: ["वनम्", "घण्टा", "गजः", "पक्षी"],
+            englishWord: "elephant",
+            sanskritWord: "गजः",
+            path: "./Asset/elephant.jpg",
+            options: ["वनम्", "गजः", "गजः", "पक्षी"],
           },
         ],
       },
@@ -121,7 +121,6 @@ export const units = [
       },
     ],
   },
-  // Add more units, lessons, and questions here for Unit 2, Unit 3, and Unit 4
   {
     unitName: "Unit 2",
     unitDesc: "Numbers",
@@ -130,32 +129,118 @@ export const units = [
         totalQuestion: 4,
         questions: [
           {
-            englishWord: "one",
+            englishWord: "onr",
             sanskritWord: "एकम्",
-            path: "./Asset/one.jpg",
+            path: "./Asset/one.jpeg",
             options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
           },
           {
             englishWord: "two",
             sanskritWord: "द्वे",
-            path: "./Asset/two.jpg",
+            path: "./Asset/two.jpeg",
             options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
           },
           {
             englishWord: "three",
             sanskritWord: "त्रीणि",
-            path: "./Asset/three.jpg",
+            path: "./Asset/three.jpeg",
             options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
           },
           {
             englishWord: "four",
             sanskritWord: "चत्वारि",
-            path: "./Asset/four.jpg",
+            path: "./Asset/four.jpeg",
             options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
           },
         ],
       },
-      // Add more lessons and questions here for Unit 2
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "onr",
+            sanskritWord: "एकम्",
+            path: "./Asset/one.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "two",
+            sanskritWord: "द्वे",
+            path: "./Asset/two.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "three",
+            sanskritWord: "त्रीणि",
+            path: "./Asset/three.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "four",
+            sanskritWord: "चत्वारि",
+            path: "./Asset/four.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+        ],
+      },
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "onr",
+            sanskritWord: "एकम्",
+            path: "./Asset/one.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "two",
+            sanskritWord: "द्वे",
+            path: "./Asset/two.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "three",
+            sanskritWord: "त्रीणि",
+            path: "./Asset/three.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "four",
+            sanskritWord: "चत्वारि",
+            path: "./Asset/four.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+        ],
+      },
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "onr",
+            sanskritWord: "एकम्",
+            path: "./Asset/one.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "two",
+            sanskritWord: "द्वे",
+            path: "./Asset/two.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "three",
+            sanskritWord: "त्रीणि",
+            path: "./Asset/three.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+          {
+            englishWord: "four",
+            sanskritWord: "चत्वारि",
+            path: "./Asset/four.jpeg",
+            options: ["एकम्", "द्वे", "त्रीणि", "चत्वारि"],
+          },
+        ],
+      },
     ],
   },
   {
@@ -168,30 +253,116 @@ export const units = [
           {
             englishWord: "red",
             sanskritWord: "रक्तः",
-            path: "./Asset/red.jpg",
+            path: "./Asset/red.jpeg",
             options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
           },
           {
             englishWord: "blue",
             sanskritWord: "नीलः",
-            path: "./Asset/blue.jpg",
+            path: "./Asset/blue.jpeg",
             options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
           },
           {
             englishWord: "yellow",
             sanskritWord: "पीतः",
-            path: "./Asset/yellow.jpg",
+            path: "./Asset/yellow.jpeg",
             options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
           },
           {
             englishWord: "green",
             sanskritWord: "हरितः",
-            path: "./Asset/green.jpg",
+            path: "./Asset/green.jpeg",
             options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
           },
         ],
       },
-      // Add more lessons and questions here for Unit 3
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "red",
+            sanskritWord: "रक्तः",
+            path: "./Asset/red.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "blue",
+            sanskritWord: "नीलः",
+            path: "./Asset/blue.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "yellow",
+            sanskritWord: "पीतः",
+            path: "./Asset/yellow.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "green",
+            sanskritWord: "हरितः",
+            path: "./Asset/green.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+        ],
+      },
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "red",
+            sanskritWord: "रक्तः",
+            path: "./Asset/red.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "blue",
+            sanskritWord: "नीलः",
+            path: "./Asset/blue.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "yellow",
+            sanskritWord: "पीतः",
+            path: "./Asset/yellow.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "green",
+            sanskritWord: "हरितः",
+            path: "./Asset/green.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+        ],
+      },
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "red",
+            sanskritWord: "रक्तः",
+            path: "./Asset/red.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "blue",
+            sanskritWord: "नीलः",
+            path: "./Asset/blue.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "yellow",
+            sanskritWord: "पीतः",
+            path: "./Asset/yellow.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+          {
+            englishWord: "green",
+            sanskritWord: "हरितः",
+            path: "./Asset/green.jpeg",
+            options: ["रक्तः", "नीलः", "पीतः", "हरितः"],
+          },
+        ],
+      },
     ],
   },
   {
@@ -204,7 +375,7 @@ export const units = [
           {
             englishWord: "lion",
             sanskritWord: "सिंहः",
-            path: "./Asset/lion.jpg",
+            path: "./Asset/lion.jpeg",
             options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
           },
           {
@@ -216,18 +387,104 @@ export const units = [
           {
             englishWord: "cow",
             sanskritWord: "गोः",
-            path: "./Asset/cow.jpg",
+            path: "./Asset/cow.jpeg",
             options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
           },
           {
-            englishWord: "pot",
+            englishWord: "dog",
             sanskritWord: "घटः",
-            path: "./Asset/pot.jpg",
-            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+            path: "./Asset/dog.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "श्वानः"],
           },
         ],
       },
-      // Add more lessons and questions here for Unit 4
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "lion",
+            sanskritWord: "सिंहः",
+            path: "./Asset/lion.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "tiger",
+            sanskritWord: "व्याघ्रः",
+            path: "./Asset/tiger.jpg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "cow",
+            sanskritWord: "गोः",
+            path: "./Asset/cow.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "dog",
+            sanskritWord: "घटः",
+            path: "./Asset/dog.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "श्वानः"],
+          },
+        ],
+      },
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "lion",
+            sanskritWord: "सिंहः",
+            path: "./Asset/lion.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "tiger",
+            sanskritWord: "व्याघ्रः",
+            path: "./Asset/tiger.jpg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "cow",
+            sanskritWord: "गोः",
+            path: "./Asset/cow.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "dog",
+            sanskritWord: "घटः",
+            path: "./Asset/dog.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "श्वानः"],
+          },
+        ],
+      },
+      {
+        totalQuestion: 4,
+        questions: [
+          {
+            englishWord: "lion",
+            sanskritWord: "सिंहः",
+            path: "./Asset/lion.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "tiger",
+            sanskritWord: "व्याघ्रः",
+            path: "./Asset/tiger.jpg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "cow",
+            sanskritWord: "गोः",
+            path: "./Asset/cow.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "घटः"],
+          },
+          {
+            englishWord: "dog",
+            sanskritWord: "घटः",
+            path: "./Asset/dog.jpeg",
+            options: ["सिंहः", "व्याघ्रः", "गोः", "श्वानः"],
+          },
+        ],
+      },
     ],
   },
 ];

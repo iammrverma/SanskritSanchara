@@ -41,11 +41,12 @@ body {
 .progressContainer .close {
   height: 100%;
   width: 10%;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
 }
 
-.progressContainer .close .link hr {
+.progressContainer .close hr {
   width: min(30px, 90%);
   height: 2px;
   position: absolute;
@@ -55,7 +56,7 @@ body {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.progressContainer .close .link hr:nth-child(2) {
+.progressContainer .close hr:nth-child(2) {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
@@ -70,7 +71,7 @@ body {
 
 .progressContainer .progressBar .progress {
   height: 100%;
-  width: 14%;
+  width: 100%;
   background: var(--secondary);
   border-radius: 12px;
   transition: width 600ms ease;

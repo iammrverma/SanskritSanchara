@@ -2,32 +2,31 @@ const uname = document.getElementById("name");
 const age = document.getElementById("age");
 const gender = document.getElementById("gender");
 
-const me = JSON.parse(localStorage.getItem("me")) || {
-  uname: "Mohan",
-  age: 19,
-  gender: "Select Gender",
+const sancharaUser = JSON.parse(localStorage.getItem("sancharaUser")) || {
+  name: "Mohan",
+  xp:0,
+  gems:100,
+  streak:0,
+  
 };
 
-uname.setAttribute("placeholder", me.uname);
-age.setAttribute("placeholder", me.age);
-gender.value = me.gender;
+uname.setAttribute("placeholder", sancharaUser.name);
 
 const handleSaveInfo = () => {
   if (
-    uname.value === "" ||
-    age.value === "" ||
-    gender.value === "Select Gender"
+    uname.value === ""
   ) {
-    alert("Please Fill all inputs");
+    alert("Please Provide Your Name");
     return;
   }
   localStorage.setItem(
-    "me",
+    "sancharaUser",
     JSON.stringify({
-      uname: uname.value,
-      age: age.value,
-      gender: gender.value,
+      name: uname.value,
+      xp: sancharaUser.xp,
+      gems: sancharaUser.gems,
+      streak: sancharaUser.streak
     })
   );
-  window.location.href = "me.html";
+  window.location.href = "./index.html";
 };
