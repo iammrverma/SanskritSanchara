@@ -16,7 +16,7 @@ Welcome to SanskritSanchara, a comprehensive language-learning platform dedicate
 
 ## Contributing
 
-We welcome contributions to SanskritSanchara from the community. If you have ideas for new features, improvements to existing content, or would like to report any issues or bugs, please submit them to our [GitHub repository](https://github.com/sanskritsanchara).
+We welcome contributions to SanskritSanchara from the community. If you have ideas for new features, improvements to existing content, or would like to report any issues or bugs, please submit them to our [GitHub repository](https://github.com/iammrverma/SanskritSanchara).
 
 ## License
 
