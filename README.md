@@ -55,7 +55,7 @@ We welcome contributions from the community to enhance and improve this project.
 
 ## Support and Feedback 💌
 
-If you encounter any issues, have suggestions, or need assistance, please feel free to [open an issue](https://github.com/iammrverma/SanskritSanchara/issues) or [contact us](mailto:rajwebz2020.com). We value your feedback and are here to help!
+If you encounter any issues, have suggestions, or need assistance, please feel free to [open an issue](https://github.com/iammrverma/SanskritSanchara/issues) or [contact us](mailto:rajwebz2020@gmail.com). We value your feedback and are here to help!
 
 ## License 📜
 
